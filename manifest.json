@@ -1,0 +1,43 @@
+{
+  "name": "Windows 11 Widget Demo",
+  "short_name": "Win11Widget",
+  "description": "A demo widget for Windows 11",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0078d4",
+  "icons": [
+    {
+      "src": "img/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "widgets": [
+    {
+      "name": "DemoWidget",
+      "tag": "pwamp",
+      "description": "A demo widget for Windows 11",
+      "template": "pwamp-template",
+      "data": "widgets/demo-data.json",
+      "ms_ac_template": "widgets/demo-layout.json",
+      "screenshot": "screenshot-widget.png",
+      "type": "application/json",
+      "screenshots": [
+        {
+          "src": "./screenshot-widget.png",
+          "sizes": "600x400",
+          "label": "The PWAmp mini-player widget"
+        }
+      ],
+      "icons": [
+        {
+          "src": "./favicon-16.png",
+          "sizes": "16x16"
+        }
+      ],
+      "auth": false,
+      "update": 86400
+    }
+  ]
+}
