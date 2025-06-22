@@ -2,25 +2,42 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Windows 11 Widget Demo</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+    <title>申し訳ありません</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #333;
+      }
+      .container {
+        max-width: 600px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.1em;
+      }
+    </style>
   </head>
   <body>
-    <h1>Windows 11 Widget Demo</h1>
-    <p>This is a demo widget for Windows 11.</p>
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-          .register('/service-worker.js')
-          .then((registration) => {
-            console.log('ServiceWorker registration successful');
-          })
-          .catch((err) => {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-      }
-    </script>
+    <div class="container">
+      <h1>申し訳ありません</h1>
+      <p>現在このページは準備中、または一時的に利用できません。</p>
+      <p>しばらくしてから再度アクセスしてください。</p>
+    </div>
   </body>
 </html>
